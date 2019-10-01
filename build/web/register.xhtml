@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Cadastro Transportadora</title>
+    </h:head>
+    <h:body>
+
+        <h:form id="registerForm" styleClass="smart-green">
+
+            <h3>Cadastrar Transportadora <span>Informar dados da Transportadora</span></h3>
+
+            <h:panelGrid columns="2" styleClass="formPanel">
+
+                <h:outputLabel for="nome">
+                    <h:outputText value="Nome:"/>
+                </h:outputLabel>
+                <h:inputText id="name" value="#{transportadora.nome}" required="true">
+                   
+                </h:inputText>
+
+                <h:outputLabel for="email">
+                    <h:outputText value="Email: "/>
+                </h:outputLabel>
+                <h:inputText id="email" required="true" value="#{transportadora.email}" >
+                   
+                </h:inputText>
+
+                <h:outputLabel for="empresa">
+                    <h:outputText value="Empresa: "/>
+                </h:outputLabel>
+                <h:inputText id="empresa" required="true" value="#{transportadora.empresa}" >
+                   
+                </h:inputText>
+                
+                <h:outputLabel for="telefone">
+                    <h:outputText value="Telefone "/>
+                </h:outputLabel>
+                <h:inputText id="telefone" required="true" value="#{transportadora.telefone}" >
+                   
+                </h:inputText>
+
+                <h:outputLabel for="celular">
+                    <h:outputText value="Celular "/>
+                </h:outputLabel>
+                <h:inputText id="celular" required="true" value="#{transportadora.celular}" >
+                   
+                </h:inputText>
+                
+                 <h:outputLabel for="whatsapp">
+                    <h:outputText value="Whatsapp "/>
+                </h:outputLabel>
+                <h:inputText id="whatsapp" required="true" value="#{transportadora.whatsapp}" >
+                   
+                </h:inputText>
+                
+                <h:outputLabel for="modal">
+                    <h:outputText value="Modal "/>
+                </h:outputLabel>
+                <h:inputText id="modal" required="true" value="#{transportadora.modal}" >
+                   
+                </h:inputText>
+                
+                <h:outputLabel for="cep">
+                    <h:outputText value="Cep "/>
+                </h:outputLabel>
+                <h:inputText id="cep" required="true" value="#{transportadora.cep}" >
+                   
+                </h:inputText>
+                
+                <h:outputLabel for="estado">
+                    <h:outputText value="Estado "/>
+                </h:outputLabel>
+                <h:inputText id="etado" required="true" value="#{transportadora.estado}" >
+                   
+                </h:inputText>
+                
+                <h:outputLabel for="cidade">
+                    <h:outputText value="Cidade "/>
+                </h:outputLabel>
+                <h:inputText id="cidade" required="true" value="#{transportadora.cidade}" >
+                   
+                </h:inputText>
+                
+                <h:outputLabel for="bairro">
+                    <h:outputText value="Bairro "/>
+                </h:outputLabel>
+                <h:inputText id="bairro" required="true" value="#{transportadora.bairro}" >
+                   
+                </h:inputText>
+                
+                <h:outputLabel for="logadouro">
+                    <h:outputText value="Rua / Avenida "/>
+                </h:outputLabel>
+                <h:inputText id="logadouro" required="true" value="#{transportadora.logadouro}" >
+                   
+                </h:inputText>
+                
+                <h:outputLabel for="numero">
+                    <h:outputText value="Numero"/>
+                </h:outputLabel>
+                <h:inputText id="numero" required="true" value="#{transportadora.numero}" >
+                   
+                </h:inputText>
+                
+                
+                <h:outputText value=""/>
+                
+                <h:commandButton id="register" styleClass="button" 
+                                 action="#{transportadoraHandler.addTransportadora(transportadora)}" 
+                                 value="Adicionar"
+                                 />
+                <h:commandLink /> 
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
